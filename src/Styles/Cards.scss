@@ -1,0 +1,55 @@
+$orange: orangered;
+
+.cards-wrapper {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 100px;
+  background-color: #f5f5f5;
+
+  .card {
+    padding: 20px;
+    box-shadow: 4px 2px 9px 9px rgba(34, 60, 80, 0.2);
+
+    .card__name {
+      text-align: center;
+      font-size: larger;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .card__color {
+      display: block;
+      text-align: center;
+    }
+
+    .card__image {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card__price-tag {
+      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card__price {
+        color: $orange;
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      .card__add {
+        all: unset;
+        padding: 10px 20px;
+        border: 1px solid $orange;
+        border-radius: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $orange;
+      }
+    }
+  }
+}

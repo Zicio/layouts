@@ -1,0 +1,45 @@
+$orange: orangered;
+
+.items-wrapper {
+  list-style-type: none;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+
+    .item__image {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .item__name {
+      font-size: larger;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .item__price {
+      color: $orange;
+      font-weight: bold;
+    }
+
+    .item__add {
+      all: unset;
+      padding: 5px 10px;
+      border: 1px solid $orange;
+      border-radius: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $orange;
+      font-size: small;
+    }
+  }
+
+  .item:not(:first-child) {
+    margin-top: 5px;
+  }
+}

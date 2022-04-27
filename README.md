@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/203iabwqye32dfri?svg=true)](https://ci.appveyor.com/project/Zicio/filter)
+[![Build status](https://ci.appveyor.com/api/projects/status/oiabbreq4s8uaqx9?svg=true)](https://ci.appveyor.com/project/Zicio/layouts)
 
 [Ссылка на GP](https://zicio.github.io/layouts/)
 

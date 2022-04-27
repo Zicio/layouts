@@ -1,3 +1,6 @@
+import PropTypes from "prop-types";
+import ItemModel from "../ItemModel";
+
 function ShopItem(props) {
   const { item } = props;
   return (
@@ -12,5 +15,9 @@ function ShopItem(props) {
     </li>
   );
 }
+
+ShopItem.propTypes = {
+  item: PropTypes.instanceOf(ItemModel).isRequired,
+};
 
 export default ShopItem;

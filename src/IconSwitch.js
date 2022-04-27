@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function IconSwitch(props) {
   const { icon, onSwitch } = props;
   const onClickSwitch = () => onSwitch();
@@ -7,5 +9,10 @@ function IconSwitch(props) {
     </span>
   );
 }
+
+IconSwitch.propTypes = {
+  icon: PropTypes.string.isRequired,
+  onSwitch: PropTypes.func.isRequired,
+};
 
 export default IconSwitch;

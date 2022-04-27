@@ -47,18 +47,19 @@ function Store() {
 
   const onSwitch = () => {
     setIcon((prevIcon) => {
-      const icon = prevIcon === "view_list" ? "view_module" : "view_list";
-      return icon;
+      const newIcon = prevIcon === "view_list" ? "view_module" : "view_list";
+      return newIcon;
     });
   };
 
+  console.log(icon);
   return (
     <main className="layouts">
       <IconSwitch icon={icon} onSwitch={onSwitch} />
       {icon === "view_list" ? (
-        <ListView items={products} />
-      ) : (
         <CardsView cards={products} />
+      ) : (
+        <ListView items={products} />
       )}
     </main>
   );

@@ -1,4 +1,6 @@
-import "./App.scss";
+import "./Styles/App.scss";
+import "./Styles/Cards.scss";
+import "./Styles/List.scss";
 import Store from "./Store";
 
 function App() {
